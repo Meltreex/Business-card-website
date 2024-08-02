@@ -1,0 +1,81 @@
+/* Устанавливаем фон для страницы */
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+/* Стили контейнера для контактов */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh; /* Устанавливаем высоту для контейнера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Стили заголовка */
+.header-title {
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+/* Стили информации о контактах */
+.contact-info {
+    font-size: 1.2em;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Стили для социальных ссылок */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для текстовых ссылок */
+.text-links a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 1.5em; /* Увеличиваем размер текста */
+    position: relative;
+}
+
+.text-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #555;
+    transition: width 0.3s ease;
+}
+
+.text-links a:hover {
+    color: #555;
+}
+
+.text-links a:hover::after {
+    width: 100%;
+}}

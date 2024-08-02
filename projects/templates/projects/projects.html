@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}Metreex visit card{% endblock %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'projects/css/projects.css' %}">
+<div class="projects-container">
+        <h1 class="header-title">Проекты</h1>
+
+        {% for el in prj %}
+            <a href="{% url 'projects-detail' el.id %}" class="projects-link">
+                <h4>{{ el.title }}</h4>
+                <p>{{ el.intro }}</p>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}Metreex visit card{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'articles/css/details_view.css' %}">
+<div class="article-container">
+    <h1 class="article-title">{{ articles.title }}</h1>
+    <p class="article-date">{{ articles.date }}</p>
+    <div class="article-text">{{ articles.full_text|safe }}</div>
+</div>
+{% endblock %

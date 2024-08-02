@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+
+{% block titile %}Metreex visit card{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+<div class="contact-container">
+    <h1 class="header-title">Контакты</h1>
+    <div class="text-links">
+        <p><a href="https://habr.com/ru/users/Metreex/" target="_blank">Habr</a></p>
+        <p><a href="https://dzen.ru/id/668ffece7eb41940684c8407?share_to=link" target="_blank">Дзен</a></p>
+        <p><a href="https://kwork.ru/user/metreex" target="_blank">Kwork</a></p>
+    </div>
+    <div class="contact-info">
+        <p>Email: r3skly@yandex.ru</p>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="social-links">
+        <a href="https://github.com/Meltreex" target="_blank">
+            <img src="{% static 'about/img/github.svg' %}" alt="GitHub">
+        </a>
+        <a href="https://vk.com/meltreex" target="_blank">
+            <img src="{% static 'about/img/vk.svg' %}" alt="VK">
+        </a>
+        <a href="https://t.me/pm2engineer" target="_blank">
+            <img src="{% static 'about/img/tg.svg' %}" alt="tg">
+        </a>
+    </div>
+</div>
+{% endblock %}
